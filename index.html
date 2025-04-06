@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선수 프로필</title>
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .profile-container {
+            display: flex;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 40px;
+            margin-top: 50px;
+        }
+        .profile-image {
+            flex: 0 0 400px;
+            margin-right: 40px;
+        }
+        .profile-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .profile-info {
+            flex: 1;
+        }
+        .player-number {
+            font-size: 72px;
+            color: #1e3799;
+            margin: 0;
+        }
+        .player-name {
+            font-size: 48px;
+            margin: 10px 0;
+        }
+        .info-table {
+            width: 100%;
+            margin-top: 30px;
+            border-collapse: collapse;
+        }
+        .info-table tr {
+            border-bottom: 1px solid #eee;
+        }
+        .info-table th, .info-table td {
+            padding: 15px 10px;
+            font-size: 18px;
+        }
+        .info-table th {
+            text-align: left;
+            color: #666;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-image">
+            <img src="player_image.jpg" alt="선수 프로필 사진">
+        </div>
+        <div class="profile-info">
+            <h1 class="player-number">1</h1>
+            <h2 class="player-name">황재윤</h2>
+            <table class="info-table">
+                <tr>
+                    <th>생년월일</th>
+                    <td>2003.03.18</td>
+                </tr>
+                <tr>
+                    <th>신장/체중</th>
+                    <td>187cm / 83kg</td>
+                </tr>
+                <tr>
+                    <th>출신교(졸업)</th>
+                    <td>고려대</td>
+                </tr>
+                <tr>
+                    <th>포지션</th>
+                    <td>골키퍼</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
